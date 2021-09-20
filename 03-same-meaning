@@ -3,4 +3,72 @@ START
 SET "Text" = STRING
 STORE "Text" with any characters or words or numbers
 REVERSE "Text"
-SET 
+SET "Reversed Text" with reversed value
+IF "Reversed Text" = "Text"
+   DISPLAY "TRUE"
+ELSE
+   DISPLAY "FALSE"
+END
+
+#KASUS 1
+START
+SET Text = STRING
+STORE Text = x
+REVERSE x 
+SET Reversed Text = x
+DISPLAY TRUE
+END
+
+#KASUS 2
+START
+SET Text = STRING
+STORE Text = abba
+REVERSE abba
+SET Reversed Text = abba
+DISPLAY TRUE
+END
+
+#KASUS 3
+START
+SET Text = STRING
+STORE Text = 101
+REVERSE 101
+SET Reversed Text = 101
+DISPLAY TRUE
+END
+
+#KASUS 4
+START
+SET Text = STRING
+STORE Text = taco cat
+REVERSE taco cat
+SET Reversed Text = taco cat
+DISPLAY TRUE
+END
+
+#KASUS 5
+START
+SET Text = STRING
+STORE Text = kodok
+REVERSE kodok
+SET Reversed Text = kodok
+DISPLAY TRUE
+END
+
+#KASUS 6
+START
+SET Text = STRING
+STORE Text = ab
+REVERSE ab
+SET Reversed Text = ba
+DISPLAY FALSE
+END
+
+#KASUS 7
+START
+SET Text = STRING
+STORE Text = abaa
+REVERSE abaa
+SET Reversed Text = aaba
+DISPLAY FALSE
+END
