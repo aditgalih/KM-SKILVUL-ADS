@@ -1,0 +1,6 @@
+#PSEUDOCODE
+START
+SET "Text" = STRING
+STORE "Text" with any characters or words or numbers
+REVERSE "Text"
+SET 
