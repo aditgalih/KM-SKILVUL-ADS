@@ -1,0 +1,80 @@
+#PSEUDOCODE
+START
+STORE "Number" with any number
+STORE "n" with any number
+WHILE "Number" <= "n"
+   CALCULATE "Number" mod 3
+   SET "mod 3" with the result of calculation
+   CALCULATE "Number" mod 5
+   SET "mod 5" with the result of calculation
+   IF "mod 3" equal to 0 AND "mod 5" not equal to 0
+      DISPLAY "Fizz"
+   ELIF "mod 3" not equal to 0 AND "mod 5" equal to 0
+      DISPLAY "Buzz"
+   ELIF "mod 3" AND "mod 5" equal to 0
+      DISPLAY "FizzBuzz"
+   ELSE 
+      DISPLAY "Number"
+END
+
+#KASUS 1
+START
+STORE Number = 1
+STORE n = 20
+WHILE 1 <= 20 -> kondisi WHILE terpenuhi
+   CALCULATE 1 mod 3 
+   SET mod 3 = not 0 -> 1 tidak hasis dibagi 3
+   CALCULATE 1 mod 5
+   SET mod 5 = not 0 -> 1 tidak habis dibagi 5
+   DISPLAY 1 -> kondisi ELSE yang terpenuhi
+END
+
+#KASUS 2
+START
+STORE Number = 2
+STORE n = 20
+WHILE 2 <= 20 -> kondisi WHILE terpenuhi
+   CALCULATE 2 mod 3 
+   SET mod 3 = not 0 -> 2 tidak hasis dibagi 3
+   CALCULATE 2 mod 5
+   SET mod 5 = not 0 -> 2 tidak habis dibagi 5
+   DISPLAY 2 -> kondisi ELSE yang terpenuhi
+END
+
+#KASUS 3
+START
+STORE Number = 3
+STORE n = 20
+WHILE 3 <= 20 -> kondisi WHILE terpenuhi
+   CALCULATE 3 mod 3 
+   SET mod 3 = 0 -> 3 hasis dibagi 3
+   CALCULATE 3 mod 5
+   SET mod 5 = not 0 -> 3 tidak habis dibagi 5
+   DISPLAY Fizz -> kondisi IF pertama yang terpenuhi
+END
+
+ETC.
+
+#OUTPUT TOTAL
+n = 20
+Output:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
