@@ -1,0 +1,36 @@
+#PSEUDOCODE 
+START
+STORE "Temperature Type" with "Fahrenheit" or "Kelvin" or "Celcius"
+STORE "N" with any number
+IF "Temperature Type" = "Fahrenheit"
+   CALCULATE ("N" - 32) * (5/9)
+ELIF "Temperature Type" = "Kelvin"
+   CALCULATE ("N" - 273.15)
+ELSE 
+   CALCULATE "N"
+SET "Celcius Temperature" value with calculation result
+DISPLAY "Celcius Temperature"
+END
+
+#KASUS 1 (FAHRENHEIT -> CELCIUS)
+START 
+STORE Temperature Type = Fahrenheit
+STORE N = 86
+CALCULATE (N - 32) * (5/9) -> Fahrenheit
+          (86 - 32) * (5/9)
+SET Celcius Temperature = 30
+DISPLAY 30
+END
+
+#KASUS 2 (CELCIUS -> CELCIUS)
+START
+STORE Temperature Type = Celcius
+STORE N = 45
+CALCULATE N -> Celcius
+          45
+SET Celcius Temperature = 45
+DISPLAY 45
+END
+
+
+ 
