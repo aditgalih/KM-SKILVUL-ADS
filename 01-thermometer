@@ -18,7 +18,7 @@ STORE Temperature Type = Fahrenheit
 STORE N = 86
 CALCULATE (N - 32) * (5/9) -> Fahrenheit
           (86 - 32) * (5/9)
-SET Celcius Temperature = 30
+SET Celcius Temperature = 30 -> calculation result
 DISPLAY 30
 END
 
@@ -28,7 +28,7 @@ STORE Temperature Type = Celcius
 STORE N = 45
 CALCULATE N -> Celcius
           45
-SET Celcius Temperature = 45
+SET Celcius Temperature = 45 -> calculation result
 DISPLAY 45
 END
 
