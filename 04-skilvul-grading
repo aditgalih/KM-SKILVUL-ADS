@@ -1,0 +1,56 @@
+#PSEUDOCODE
+START
+STORE "Nilai Awal" with any number
+IF "Nilai Awal" >= 0 AND "Nilai Awal" < 68
+   CALCULATE "Nilai Awal"
+   SET "Nilai Akhir" with calculation value
+   DISPLAY "Nilai Akhir"
+ELIF "Nilai Awal >= 68 AND "Nilai Awal" <= 100
+   FOR "Nilai Pembulatan" = "Nilai Awal", "Nilai Awal" < "Nilai Awal" + 3, "Nilai Awal" += 1
+      CALCULATE "Nilai Pembulatan" mod 5
+      SET "mod 5" with calculation value
+      IF "mod 5" equal to 0
+         CALCULATE "Nilai Pembulatan"
+         SET "Nilai Akhir" with calculation value
+      ELSE 
+         CALCULATE 'Nilai Awal"
+         SET "Nilai Akhir" with calculation value
+ELSE
+   DISPLAY "FALSE"
+END
+
+#KASUS 1
+START
+STORE Nilai Awal = 73
+Memenuhi kondisi ELIF (68 > 73 > 100)
+   FOR Nilai pembulatan = nilai awal, nilai awal < 76, nilai awal = nilai awal + 1
+      CALCULATE Nilai Pembulatan mod 5
+         73 (<76 OK) mod 5 = not equal 0
+         73+1 (=74<76 OK) mod 5 = not equal 0
+         73+2 (=75<76 OK) mod 5 = equal 0
+         Loop selesai 
+      SET mod 5 = 0 -> pads loop 73+2
+      IF mod 5 = 0 -> kondisi IF terpenuhi
+      CALCULATE Nilai Pembulatan = 73+2 = 75
+      SET Nilai Akhir = nilai pembulatan = 75
+      DISPLAY 75
+
+#KASUS 2
+START
+STORE Nilai Awal = 87
+Memenuhi kondisi ELIF (68 > 87 > 100)
+   FOR Nilai pembulatan = nilai awal, nilai awal < 90, nilai awal = nilai awal + 1
+      CALCULATE Nilai Pembulatan mod 5
+         87 (<90 OK) mod 5 = not equal 0
+         87+1 (=88<90 OK) mod 5 = not equal 0
+         87+2 (=<89<90 OK) mod 5 = not equal 0
+         Loop tidak dapat dilanjutkan karena maksimal adalah +2 (<3)
+      SET mod 5 = not equal 0 
+      ELSE mod 5 = not equal 0 -> kondisi ELSE terpenuhi
+      CALCULATE Nilai Awal = 87
+      SET Nilai Akhir = nilai awal = 87
+      DISPLAY 87
+
+      
+   
+         
